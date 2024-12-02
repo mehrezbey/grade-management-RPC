@@ -28,21 +28,21 @@ public class GradeServiceImpl implements IGradeService {
     @Override
     public String insert(String name, double grade) {
         grades.put(name,grade);
-        return "Graded was added successfully";
+        return "Grade was added successfully";
     }
 
     @Override
     public String delete(String name) {
         if(grades.containsKey(name))
             grades.remove(name);
-        return "Graded was deleted successfully";
+        return "Grade was deleted successfully";
 
     }
 
     @Override
     public String edit(String name, double grade) {
         grades.put(name,grade);
-        return "Graded was edited successfully";
+        return "Grade was edited successfully";
 
     }
 
